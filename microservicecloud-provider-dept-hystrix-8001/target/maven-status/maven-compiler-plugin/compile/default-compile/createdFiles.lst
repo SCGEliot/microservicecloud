@@ -1,0 +1,5 @@
+com\scg\springApplicaitonHystrix8001\controller\DeptController.class
+com\scg\springApplicaitonHystrix8001\service\DeptService.class
+com\scg\springApplicaitonHystrix8001\service\impl\DeptServiceImpl.class
+com\scg\springApplicaitonHystrix8001\SpringApplication8001Hystrix.class
+com\scg\springApplicaitonHystrix8001\dao\DeptDao.class

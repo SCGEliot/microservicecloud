@@ -1,0 +1,5 @@
+com\scg\springcloud\cfgbeans\ConfigBean.class
+com\scg\springcloud\controller\DeptController_Consumer.class
+com\scg\config\RandomRuleMy.class
+com\scg\springcloud\SpringApplicationDept80.class
+com\scg\config\MySelfRule.class

@@ -1,0 +1,30 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true 
+
+zuul:
+  #ignored-services: microservicecloud-dept  # 忽略 单个原真实服务名
+  prefix: /scg       # 设置统一公共前缀
+  ignored-services: "*"  # 忽略 多个原真实服务名
+  routes:
+#   映射规则
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /springCloud/**
+
+info:
+  app.name: scg-microcloud
+  company.name: www.scg.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

@@ -26,12 +26,12 @@ eureka:
 #      defaultZone: http://localhost:7001/eureka
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
   instance:
-    instance-id: springCloud-dept:8003
+    instance-id: springcloud-dept:8003
     prefer-ip-address: true    #访问路径可以显示IP地址
 
 info:
   app.name: scg-SpringCloud
   company.name: www.scg.com
-  build.artifactId: microservicecloud-provider-dept-8003
-  build.version: 0.0.1-SNAPSHOT
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 

@@ -34,6 +34,8 @@ public class DeptController_Consumer {
     @RequestMapping(value = "/consumer/dept/get/{id}", method = RequestMethod.GET)
     public Dept get(@PathVariable("id") Long id)
     {
+        //restTemplate.delete(REST_URL_PREFIX + "dept/delete/" + id);
+        //restTemplate.put(REST_URL_PREFIX + "dept/get/" + id,Dept.class);
         return restTemplate.getForObject(REST_URL_PREFIX + "dept/get/" + id,Dept.class);
     }
 

@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class MySelfRule {
     @Bean
     public IRule myRule() {
-        //return new RoundRobinRule();// Ribbon默认是轮询，我自定义为随机
-        return new RandomRuleMy();// 我自定义为每台机器5次
+        return new RoundRobinRule();// Ribbon默认是轮询，我自定义为随机
+        //return new RandomRuleMy();// 我自定义为每台机器5次
     }
 }
